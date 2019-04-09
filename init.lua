@@ -69,14 +69,7 @@ cottages.handmill_product = {};
 cottages.handmill_product[ cottages.craftitem_seed_wheat ] = 'farming:flour 1';
 cottages.handmill_product[ cottages.craftitem_seed_barley ] = 'farming:flour 1';
 
-if farming.mod and farming.mod == "redo" then
-	cottages.handmill_product[ "farming:seed_oat" ] = 'farming:flour 1';
-	cottages.handmill_product[ "farming:seed_rye" ] = 'farming:flour 1';
-	cottages.handmill_product[ "farming:seed_rice" ] = 'farming:rice_flour 1';
-	cottages.handmill_product[ "farming:rice" ] = 'farming:rice_flour 1';
-end
-
-if farming.mod and farming.mod == "undo" then
+if farming.mod and (farming.mod == "redo" or farming.mod == "undo") then
 	cottages.handmill_product[ "farming:seed_oat" ] = 'farming:flour 1';
 	cottages.handmill_product[ "farming:seed_rye" ] = 'farming:flour 1';
 	cottages.handmill_product[ "farming:seed_rice" ] = 'farming:rice_flour 1';
