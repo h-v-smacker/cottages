@@ -46,6 +46,9 @@ cottages.craftitem_chest_locked = "default:chest_locked";
 cottages.craftitem_chest        = "default:chest";
 -- used for: hatch, table
 cottages.craftitem_slab_wood    = "stairs:slab_wood";
+if (minetest.get_modpath("slabcompat")) then
+    cottages.craftitem_slab_wood = "group:slab_wood"
+end
 
 -- use moreblocks slab only as a last-resort measure
 if( not minetest.get_modpath("stairs") 
