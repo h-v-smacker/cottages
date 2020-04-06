@@ -303,7 +303,7 @@ minetest.register_node("cottages:slate_vertical", {
                cottages.texture_roof_sides, "cottages_slate.png"},
 	paramtype2 = "facedir",
 	groups = {cracky = 2, roof = 1},
-	sounds = default.node_sound_stone_defaults,
+	sounds = default.node_sound_stone_defaults(),
 	is_ground_content = false,
 })
 
@@ -325,7 +325,7 @@ minetest.register_node("cottages:roof_vertical_asphalt", {
                cottages.texture_roof_sides, "cottages_homedecor_shingles_asphalt.png"},
 	paramtype2 = "facedir",
 	groups = {cracky = 2, roof = 1},
-	sounds = default.node_sound_stone_defaults,
+	sounds = default.node_sound_stone_defaults(),
 	is_ground_content = false,
 })
 
@@ -348,7 +348,7 @@ minetest.register_node("cottages:roof_vertical_terracotta", {
                cottages.texture_roof_sides, "cottages_homedecor_shingles_terracotta.png"},
 	paramtype2 = "facedir",
 	groups = {cracky = 2, roof = 1},
-	sounds = default.node_sound_stone_defaults,
+	sounds = default.node_sound_stone_defaults(),
 	is_ground_content = false,
 })
 
@@ -371,7 +371,7 @@ minetest.register_node("cottages:roof_vertical_wood", {
                cottages.texture_roof_sides, cottages.textures_roof_wood},
 	paramtype2 = "facedir",
 	groups = {cracky = 2, roof = 1},
-	sounds = default.node_sound_stone_defaults,
+	sounds = default.node_sound_stone_defaults(),
 	is_ground_content = false,
 })
 
@@ -394,7 +394,7 @@ minetest.register_node("cottages:roof_vertical_brown", {
                cottages.texture_roof_sides, "cottages_homedecor_shingles_wood.png"},
 	paramtype2 = "facedir",
 	groups = {cracky = 2, roof = 1},
-	sounds = default.node_sound_stone_defaults,
+	sounds = default.node_sound_stone_defaults(),
 	is_ground_content = false,
 })
 
@@ -417,7 +417,7 @@ minetest.register_node("cottages:roof_vertical_shingle", {
                cottages.texture_roof_sides, "cottages_homedecor_shingles_misc_wood.png"},
 	paramtype2 = "facedir",
 	groups = {cracky = 2, roof = 1},
-	sounds = default.node_sound_stone_defaults,
+	sounds = default.node_sound_stone_defaults(),
 	is_ground_content = false,
 })
 
@@ -443,7 +443,7 @@ minetest.register_node("cottages:reet", {
 	description = S("Reed for thatching"),
 	tiles = {"cottages_reet.png"},
 	groups = {snappy = 3, choppy = 3, oddly_breakable_by_hand = 3, flammable = 3, roof = 1},
-	sounds = default.node_sound_wood_defaults,
+	sounds = default.node_sound_wood_defaults(),
 	is_ground_content = false,
 })
 
