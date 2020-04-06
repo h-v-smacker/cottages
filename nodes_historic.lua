@@ -27,7 +27,7 @@ minetest.register_node("cottages:wagon_wheel", {
 	},
 	groups = {choppy=2,dig_immediate=2,attached_node=1},
 	legacy_wallmounted = true,
-	sounds = default.node_sound_defaults,
+	sounds = default.node_sound_defaults(),
 	is_ground_content = false,
 })
 
@@ -38,7 +38,7 @@ minetest.register_node("cottages:loam", {
 	tiles = {"cottages_loam.png"},
 	groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2},
 	groups = {crumbly=3},
-	sounds = default.node_sound_dirt_defaults,
+	sounds = default.node_sound_dirt_defaults(),
 	is_ground_content = false,
 })
 
@@ -53,7 +53,7 @@ minetest.register_node("cottages:straw_ground", {
 	description = S("Straw ground for animals"),
 	tiles = {"cottages_darkage_straw.png","cottages_loam.png","cottages_loam.png","cottages_loam.png","cottages_loam.png","cottages_loam.png"},
 	groups = {snappy=2,crumbly=3,choppy=2,oddly_breakable_by_hand=2},
-	sounds = default.node_sound_dirt_defaults,
+	sounds = default.node_sound_dirt_defaults(),
 	is_ground_content = false,
 })
 
