@@ -66,6 +66,7 @@ minetest.register_node("cottages:glass_pane", {
 		tiles = {"cottages_glass_pane.png"},
 		paramtype = "light",
 		paramtype2 = "facedir",
+		use_texture_alpha = "clip",
 		groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2},
 		node_box = {
 			type = "fixed",
@@ -90,6 +91,7 @@ minetest.register_node("cottages:glass_pane_side", {
 		tiles = {"cottages_glass_pane.png"},
 		paramtype = "light",
 		paramtype2 = "facedir",
+		use_texture_alpha = "clip",
 		groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2},
 		node_box = {
 			type = "fixed",
