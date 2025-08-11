@@ -783,7 +783,7 @@ cottages.sit_on_bench = function( pos, node, clicker, itemstack, pointed_thing )
 		default.player_attached[pname] = false
 		clicker:set_pos({x=pos.x,y=pos.y-0.5,z=pos.z})
 		clicker:set_eye_offset({x=0,y=0,z=0}, {x=0,y=0,z=0})
-		clicker:set_physics_override(1, 1, 1)
+		clicker:set_physics_override({speed=1,jump=1,gravity=1})
 		default.player_set_animation(clicker, "stand", 30)
 	else
 		-- the bench is not centered; prevent the player from sitting on air
@@ -801,7 +801,7 @@ cottages.sit_on_bench = function( pos, node, clicker, itemstack, pointed_thing )
 		clicker:set_eye_offset({x=0,y=-7,z=2}, {x=0,y=0,z=0})
 		clicker:set_pos( p2 )
 		default.player_set_animation(clicker, "sit", 30)
-		clicker:set_physics_override(0, 0, 0)
+		clicker:set_physics_override({speed=0,jump=0,gravity=0})
 		default.player_attached[pname] = true
 	end
 end
@@ -831,7 +831,7 @@ cottages.sleep_in_bed = function( pos, node, clicker, itemstack, pointed_thing )
 		default.player_attached[pname] = false
 		clicker:set_pos({x=pos.x,y=pos.y-0.5,z=pos.z})
 		clicker:set_eye_offset({x=0,y=0,z=0}, {x=0,y=0,z=0})
-		clicker:set_physics_override(1, 1, 1)
+		clicker:set_physics_override({speed=1,jump=1,gravity=1})
 		default.player_set_animation(clicker, "stand", 30)
 		minetest.chat_send_player( pname, 'That was enough sleep for now. You stand up again.');
 		return;
@@ -932,7 +932,7 @@ cottages.sleep_in_bed = function( pos, node, clicker, itemstack, pointed_thing )
 			default.player_attached[pname] = false
 			clicker:set_pos({x=pos.x,y=pos.y-0.5,z=pos.z})
 			clicker:set_eye_offset({x=0,y=0,z=0}, {x=0,y=0,z=0})
-			clicker:set_physics_override(1, 1, 1)
+			clicker:set_physics_override({speed=1,jump=1,gravity=1})
 			default.player_set_animation(clicker, "stand", 30)
 			minetest.chat_send_player( pname, 'That was enough sitting around for now. You stand up again.');
 			return;
@@ -943,7 +943,7 @@ cottages.sleep_in_bed = function( pos, node, clicker, itemstack, pointed_thing )
 	clicker:set_eye_offset({x=0,y=-7,z=2}, {x=0,y=0,z=0})
 	clicker:set_pos( p );
 	default.player_set_animation(clicker, new_animation, 30)
-	clicker:set_physics_override(0, 0, 0)
+	clicker:set_physics_override({speed=0,jump=0,gravity=0})
 	default.player_attached[pname] = true
 
 	if( allow_sleep==true) then
